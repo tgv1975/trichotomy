@@ -1,0 +1,41 @@
+html, body {
+	background: silver;
+}
+
+.trii {
+    border: 1px solid orange;
+}
+
+.trii .beam {
+	border: 1px solid black;
+}
+
+.trii .beam--center {
+    flex: 1 auto;
+    overflow: auto;
+    background: ivory;
+}
+
+.trii .beam--top {
+    background: blue;
+    color: ivory;
+}
+
+.trii .beam--bottom {
+	background: aqua;
+}
+
+.trii .beam--left {
+    width: 20%;
+	background: yellow;
+}
+
+.trii .beam--right {
+    background: orange;
+}
+
+.trii .beam--overlay-vertical {
+}
+
+.trii .beam--overlay-horizontal {
+}
