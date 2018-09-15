@@ -6,31 +6,29 @@ html, body {
     border: 1px solid orange;
 }
 
-.trii .beam {
+.trii > div {
 	border: 1px solid black;
 }
 
-.trii .beam--center {
-    flex: 1 auto;
-    overflow: auto;
+.trii .centerpiece {
     background: ivory;
 }
 
-.trii .beam--top {
+.trii .demo-top {
     background: blue;
     color: ivory;
 }
 
-.trii .beam--bottom {
+.trii .demo-bottom {
 	background: aqua;
 }
 
-.trii .beam--left {
+.trii .demo-left {
     width: 20%;
 	background: yellow;
 }
 
-.trii .beam--right {
+.trii .demo-right {
     background: orange;
 }
 

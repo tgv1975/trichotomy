@@ -13,7 +13,6 @@ html, body {
     display: flex;
     height: 100%;
     min-height: 0;
-    border: 5px solid orange;
 }
 
 .trii.vertical {
@@ -31,34 +30,23 @@ html, body {
     flex-direction: row;
 }
 
-.trii .beam {
-}
-
-.trii .beam--center {
+.trii .centerpiece {
     flex: 1 auto;
     overflow: auto;
+    height: 100%;
 }
 
-.trii .beam--top {
-}
-
-.trii .beam--bottom {
-}
-
-.trii .beam--left {
-}
-
-.trii .beam--right {
+.trii .right {
     right: 0;
 }
 
-.trii .beam--overlay-vertical {
+.trii .overlay-vertical {
     position: absolute;
     width: 20%;
     height: 100%;
 }
 
-.trii .beam--overlay-horizontal {
+.trii .overlay-horizontal {
     position: absolute;
     width: 100%;
 }
