@@ -40,14 +40,14 @@
 					For instance, for a window opening we get the upper rail, window panes, and stool. The first and
 					last elements can be easily discarded, conceptually, because the window panes are what <i>really</i> defines a
 					window, but they are there nevertheless, even if mostly hidden.</p>
-				<p>In UI design, there is the classic trichotomy of the interface:</p>
+				<p>In UI design, there is the classic trichotomy of the interface <sup><a href="#footnotes">*</a></sup>:</p>
 				<h4>Header, Center(piece), Footer</h4>
 				<p>Simpler UIs have to use this pattern only once, at the top level: the app's shell, its main layout. But as the
 					UI gets more complex, there arises a need to repeat this pattern, over and over. Think
 					<a href="http://www.houseofwhitetie.com/reaper/imperial/wt_imperial.html"
 					   target="_blank">DAW interfaces</a> that can get pretty complex.
 				</p>
-				<p>Therefore it would be useful to define an implementation of this pattern into web design, using current
+				<p>Therefore it would be useful to define an implementation of this concept/pattern into web design, using current
 					technologies, based on these principles:
 					<ol>
 						<li>Most non-trivial layouts require separation into well-defined regions.</li>
@@ -58,9 +58,18 @@
 				</p>
 				<h2>This implementation</h2>
 				<p>
-					Any consumer may simply import <b>trichotomy.css</b> and use the container classes (<i>.trichotomy, .vertical,
+					It's nothing new. But it brings to the table a few advantages: utmost simplicity while retaining meaning in
+					relation to the underlying concept; scalability; disregard of all else but the underlying concept, including
+					prettiness - that is the concern of the frontend library you may chose for the task.
+				</p>
+				<p>
+					Any consumer may simply import <b>trichotomy.css</b> and use the container
+					classes (<i>.trichotomy,
+						.vertical,
 						.horizontal</i>) and the <i>.centerpiece</i> class. The rest takes care of itself by the magic of <b>flex</b>.
-					The implementation does not rely on any framework, it's pure HTML5/CSS3.
+					The implementation does not rely on any framework, it's pure HTML5/CSS3. This should make it play nice with all
+					frontend frameworks (Bootstrap, Semantic UI, etc.), the use of which I actually encourage along with this,
+					especially since nowadays it's a must.
 				</p>
 
 				<h2>Caveats</h2>
@@ -70,6 +79,7 @@
 				<h2>TODO</h2>
 				<ul>
 					<li>Define and solve horizontal overlays, which would cover the case of dynamic hiding of headers/footers.</li>
+					<li>Offer build and installation instructions.</li>
 				</ul>
 				<h2>Examples</h2>
 				<ul>
@@ -78,6 +88,11 @@
 					<li><a href="demo/overlay-sidebar/">Overlay Sidebar</a></li>
 					<li><a href="demo/adjacent-sidebars/">Adjacent Sidebars</a></li>
 				</ul>
+
+				<hr>
+
+				<a name="footnotes"></a>
+				<sup>*</sup> Although no one ever called it that before.
 			</div>
 		</div>
 		<div class="demo-bottom">This footer sticks to the bottom of the viewport.</div>
