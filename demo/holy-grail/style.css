@@ -3,15 +3,16 @@ html, body {
 }
 
 .trichotomy {
-    border: 1px solid orange;
+    border: 5px solid orange;
 }
 
 .trichotomy > div {
-	border: 1px solid black;
+	border: 5px solid purple;
 }
 
 .trichotomy .centerpiece {
     background: ivory;
+    border: 5px solid red;
 }
 
 .trichotomy .demo-top {
@@ -20,7 +21,7 @@ html, body {
 }
 
 .trichotomy .demo-bottom {
-	background: aqua;
+	background: cyan;
 }
 
 .trichotomy .demo-left {
@@ -29,13 +30,10 @@ html, body {
 }
 
 .trichotomy .demo-right {
+    width: 20%;
     background: orange;
 }
 
-.trichotomy .overlay-vertical {
-    opacity: .9;
-}
-
-.trichotomy .overlay-horizontal {
-    opacity: .9;
+* {
+    border-width: 1px !important;
 }
