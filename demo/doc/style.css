@@ -1,0 +1,66 @@
+html, body {
+	background: silver;
+}
+
+.trichotomy {
+    border: 5px solid orange;
+}
+
+.trichotomy.vertical:before {
+    font-style: oblique;
+    font-weight: bold;
+    content: ".trichotomy.vertical"
+}
+
+.trichotomy.horizontal:before {
+    font-style: oblique;
+    font-weight: bold;
+    content: ".trichotomy.horizontal"
+}
+
+.trichotomy > div {
+	border: 5px solid purple;
+}
+
+.trichotomy .centerpiece {
+    background: ivory;
+    border: 5px solid red;
+}
+
+
+.trichotomy .centerpiece:before {
+    font-style: oblique;
+    font-weight: bold;
+    content: '.centerpiece';
+}
+
+.trichotomy .demo-top {
+    background: blue;
+    color: ivory;
+}
+
+.trichotomy .demo-top:before {
+    font-style: oblique;
+    font-weight: bold;
+    content: 'No class required';
+}
+
+.trichotomy .demo-bottom {
+	background: cyan;
+}
+
+.trichotomy .demo-bottom:before {
+    font-style: oblique;
+    font-weight: bold;
+    content: 'No class required';
+}
+
+.trichotomy .demo-left {
+    width: 20%;
+	background: orange;
+}
+
+.trichotomy .demo-right {
+    width: 20%;
+    background: orange;
+}

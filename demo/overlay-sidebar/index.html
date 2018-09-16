@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="../../trichotomy.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="../demo.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="style.css" />
+</head>
+
+<body>
+    <div class="trichotomy vertical">
+        <div class="demo-top">
+            <a href="../../index.html">&laquo; BACK</a>
+        </div>
+        <div class="trichotomy horizontal">
+            <div class="overlay-vertical demo-left">
+                <div class="trichotomy vertical">
+                    <div class="demo-top">Left sidebar header</div>
+                    <div class="centerpiece">
+                        <p>
+                            <b>
+                                Note how this sidebar is overlayed on top of the underlying centerpiece.
+                                Add class "overlay-vertical" to achieve this.
+                            </b>
+                        </p>
+                        <p>In a real app, you'd toggle this sidebar visibility programatically, to your discretion,
+                            retaining the guaranteed layout.</p>
+                        <div class="scroll-maker"></div>
+                    </div>
+                    <div class="demo-bottom">Left sidebar footer</div>
+                </div>
+            </div>
+            <div class="centerpiece">
+                <h1>Header, Centerpiece, Footer is the holy trichotomy.</h1>
+                <button id="toggleSidebar">Toggle Left Overlay Sidebar</button>
+                <div class="scroll-maker"></div>
+            </div>
+            <div class="right demo-right">
+                <div class="trichotomy vertical">
+                    <div class="demo-top">
+                        Sidebar right header
+                    </div>
+                    <div class="centerpiece">
+                        <div class="scroll-maker"></div>
+                    </div>
+                    <div class="demo-bottom">Right sidebar footer</div>
+                </div>
+            </div>
+        </div>
+        <div class="demo-bottom">Main footer</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
