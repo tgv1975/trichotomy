@@ -15,7 +15,7 @@
 	<link rel="stylesheet"
 	      type="text/css"
 	      media="screen"
-	      href="trii.css" />
+	      href="trichotomy.css" />
 	<link rel="stylesheet"
 	      type="text/css"
 	      media="screen"
@@ -24,15 +24,15 @@
 </head>
 
 <body>
-	<div class="trii vertical">
-		<div class="beam beam--top">
-			<h1>This is could be the main header section</h1>
+	<div class="trichotomy vertical">
+		<div class="demo-top">
+			<h1>Main header</h1>
 		</div>
-		<div class="trii horizontal">
-			<div class="beam beam--left beam--overlay-vertical">
-				<div class="trii vertical">
-					<div class="beam beam--top">Left sidebar header</div>
-					<div class="beam beam--center">This sidebar is an "overlay" sidebar, i.e. it behaves like an absolutely positioned
+		<div class="trichotomy horizontal">
+			<div class="overlay-vertical demo-left">
+				<div class="trichotomy vertical">
+					<div class="demo-top">Left sidebar header</div>
+					<div class="centerpiece">This sidebar is an "overlay" sidebar, i.e. it behaves like an absolutely positioned
 						element (which is, in fact, the case).
 						<p><b>Note how it sits on top of the main content.</b></p>
 						<p>Bellow, a battle of poets illustrates how the "main", "central" section of the sidebar scrolls in isolation,
@@ -74,10 +74,10 @@ What powerful but unrecorded race
 Once dwelt in that annihilated place.[10]
 						</pre>
 					</div>
-					<div class="beam beam--bottom">Left sidebar footer</div>
+					<div class="demo-bottom">Left sidebar footer</div>
 				</div>
 			</div>
-			<div class="beam beam--center">
+			<div class="centerpiece">
 				Metamorphosis
 				Franz Kafka
 				Translated by David Wyllie
@@ -1918,18 +1918,29 @@ Once dwelt in that annihilated place.[10]
 				their new dreams and good intentions, as soon as they reached their destination Grete was the first to get up and
 				stretch out her young body.
 			</div>
-			<div class="beam beam--right">
-				<div class="trii vertical">
-					<div class="beam beam--top">
+			<div class="right">
+				<div class="trichotomy vertical">
+					<div class="demo-top">
 						<pre>Sidebar right header</pre>
 					</div>
-					<div class="beam beam--center">
-						This sidebar is positioned normally, i.e. doesn't act as an overlay, and has no footer.
+					<div class="centerpiece">
+						<div class="trichotomy vertical">
+							<div class="demo-top">First inner header</div>
+							<div class="centerpiece fit">First inner <b>trichotomy</b> ensemble.</div>
+							<div class="demo-bottom">First inner footer</div>
+						</div>
+
+						<div class="trichotomy vertical">
+							<div class="demo-top">Second inner header</div>
+							<div class="centerpiece">Second inner <b>trichotomy</b> ensemble.</div>
+							<div class="demo-bottom">Second inner footer</div>
+						</div>
 					</div>
+					<div class="demo-bottom">Right sidebar footer</div>
 				</div>
 			</div>
 		</div>
-		<div class="beam beam--bottom">Footer content</div>
+		<div class="demo-bottom">Main footer</div>
 	</div>
 </body>
 

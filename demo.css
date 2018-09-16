@@ -2,40 +2,38 @@ html, body {
 	background: silver;
 }
 
-.trii {
+.trichotomy {
     border: 1px solid orange;
 }
 
-.trii .beam {
+.trichotomy > div {
 	border: 1px solid black;
 }
 
-.trii .beam--center {
-    flex: 1 auto;
-    overflow: auto;
+.trichotomy .centerpiece {
     background: ivory;
 }
 
-.trii .beam--top {
+.trichotomy .demo-top {
     background: blue;
     color: ivory;
 }
 
-.trii .beam--bottom {
+.trichotomy .demo-bottom {
 	background: aqua;
 }
 
-.trii .beam--left {
+.trichotomy .demo-left {
     width: 20%;
 	background: yellow;
 }
 
-.trii .beam--right {
+.trichotomy .demo-right {
     background: orange;
 }
 
-.trii .beam--overlay-vertical {
+.trichotomy .overlay-vertical {
 }
 
-.trii .beam--overlay-horizontal {
+.trichotomy .overlay-horizontal {
 }
