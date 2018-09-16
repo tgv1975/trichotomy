@@ -26,7 +26,7 @@ Therefore it would be useful to define an implementation of this concept/pattern
 ## This implementation
 It's nothing new. But it brings to the table a few advantages: utmost simplicity while retaining meaning in relation to the underlying concept; scalability; disregard of all else but the underlying concept, including prettiness - that is the concern of the frontend library you may chose for the task.
 
-Any consumer may simply import trichotomy.css and use the container classes (.trichotomy, .vertical, .horizontal) and the .centerpiece class. The rest takes care of itself by the magic of flex. The implementation does not rely on any framework, it's pure HTML5/CSS3. This should make it play nice with all frontend frameworks (Bootstrap, Semantic UI, etc.), the use of which I actually encourage along with this, especially since nowadays it's a must.
+Any consumer may simply import trichotomy.css and use the container classes (.trichotomy, .vertical, .horizontal) and the .centerpiece class. The rest takes care of itself by the magic of flex. The implementation does not rely on any framework, it's pure HTML5/CSS3. This should make it play nice with all frontend frameworks (Bootstrap, Semantic UI, etc.), the use of which I actually encourage along with this is, in fact, encouraged.
 
 ## Caveats
 Dynamic functionality, some of the actual sizing, obviously the final styling, are all the responsibility of the consumer.
