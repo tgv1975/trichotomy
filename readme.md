@@ -20,7 +20,7 @@ Install like you would any npm module:
 npm install trichotomy@latest
 ```
 
-Import the trichotomy.css (or trichotomy.min.css) from your node_modules into your project as you'd normally import any of your CSS assets.
+Import the trichotomy.css (or trichotomy.min.css) from your *node_modules/trichotomy/dist* into your project as you'd normally import any of your CSS assets.
 
 ## Contributing
 
