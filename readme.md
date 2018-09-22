@@ -1,4 +1,47 @@
-# Trichotomy UI
+# Trichotomy
+
+Nested Layout Composition Using a Trichotomy Principle.
+
+[Website (including examples)](https://tgv1975.github.io/trichotomy/)
+
+## Getting Started
+
+This package is to be deployed as a single CSS file. However, if you plan on forking it, or in any other way make changes to it, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+No prerequisites required.
+
+### Installing
+
+Install like you would any npm module:
+
+```
+npm install trichotomy@latest
+```
+
+Import the trichotomy.css (or trichotomy.min.css) from your node_modules into your project as you'd normally import any of your CSS assets.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Tudor Gavan** - *Trichotomy* - [Trichotomy](https://github.com/tgv1975/trichotomy)
+
+## License
+
+This project is licensed under the ISC License - see the [LICENSE.md](LICENSE) file for details
+
+## Acknowledgments
+
+* Mother nature, for providing the model
+* Human nature, for providing the abstraction
 
 ## The Concept
 We sometimes divide things into three parts when we conceptualize about them.
