@@ -1,6 +1,6 @@
 {
   "name": "trichotomy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nested layout composition using a Trichotomy Principle",
   "main": "index.js",
   "scripts": {
