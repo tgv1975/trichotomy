@@ -44,13 +44,13 @@ This project is licensed under the ISC License - see the [LICENSE.md](LICENSE) f
 * Human nature, for providing the abstraction
 
 ## The Concept
-We sometimes divide things into three parts when we conceptualize about them.
+We often divide things into three parts when we conceptualize about them.
 
-House: Foundation, storeys, roof.
+**House**: Foundation, storeys, roof.
 
-Tree: Roots, trunk, branches.
+**Tree**: Roots, trunk, branches.
 
-Arbitrary stretch in space: Front, middle, back; or time: Begining, middle, end.
+**Arbitrary stretch in space**: Front, middle, back; **or time**: Begining, middle, end.
 
 This conceptual pattern arises even when the three parts are not readily identifiable. For instance, for a window opening we get the upper rail, window panes, and stool. The first and last elements can be easily discarded, conceptually, because the window panes are what really defines a window, but they are there nevertheless, even if mostly hidden.
 
