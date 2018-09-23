@@ -14,10 +14,6 @@ html, body {
     min-height: 0;
 }
 
-.trichotomy>* {
-    box-sizing: border-box;
-}
-
 .trichotomy.vertical {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
