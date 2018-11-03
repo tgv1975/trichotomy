@@ -5,6 +5,7 @@ var rename = require('gulp-rename');
 var config = {
     src: 'src',
     dest: 'dist',
+    demo: 'demo',
     filename: 'trichotomy.css',
     minFilename: 'trichotomy.min.css'
 }
@@ -24,7 +25,12 @@ gulp.task('minify-copy', function () {
         .pipe(gulp.dest(config.dest));
 });
 
-gulp.task('default', gulp.parallel('copy', 'minify-copy'));
+gulp.task('copy-to-demo', function () {
+    return gulp.src(`${config.dest}/${config.minFilename}`)
+        .pipe(gulp.dest(config.demo));
+});
+
+gulp.task('default', gulp.parallel('copy', 'minify-copy', 'copy-to-demo'));
 
 gulp.task('watch', function () {
     return gulp.watch(`${config.src}/${config.filename}`, gulp.series('default'));
