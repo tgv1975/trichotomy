@@ -11,7 +11,7 @@
     <link rel="stylesheet"
           type="text/css"
           media="screen"
-          href="../../dist/trichotomy.min.css" />
+          href="../trichotomy.min.css" />
     <link rel="stylesheet"
           type="text/css"
           media="screen"
@@ -24,7 +24,7 @@
 
 <body>
     <div class="trichotomy vertical">
-        <div class="demo-top">
+        <div class="demo-top main-top overlay-horizontal">
             <a href="../../index.html">&laquo; BACK</a>
         </div>
         <div class="trichotomy horizontal">
@@ -47,15 +47,17 @@
             </div>
             <div class="centerpiece">
                 <h1>Header, Centerpiece, Footer is the holy trichotomy.</h1>
-                <button id="toggleSidebar">Toggle Left Overlay Sidebar</button>
+                <button id="toggleHeader">Toggle Main Header Visible</button>
+                <button id="toggleSidebar">Toggle Left Sidebar Visible</button>
                 <div class="scroll-maker"></div>
             </div>
             <div class="right demo-right">
                 <div class="trichotomy vertical">
-                    <div class="demo-top">
+                    <div class="demo-top overlay-horizontal right-top">
                         Sidebar right header
                     </div>
                     <div class="centerpiece">
+                        <button id="toggleRightHeader">Toggle Right Header Overlay</button>
                         <div class="scroll-maker"></div>
                     </div>
                     <div class="demo-bottom">Right sidebar footer</div>

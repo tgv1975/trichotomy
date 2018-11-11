@@ -1,6 +1,6 @@
 {
   "name": "trichotomy",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Nested layout composition using a Trichotomy Principle",
   "main": "index.js",
   "scripts": {
@@ -22,10 +22,17 @@
   "bugs": {
     "url": "https://github.com/tgv1975/trichotomy/issues"
   },
+  "files": [
+    "dist/"
+  ],
   "homepage": "https://github.com/tgv1975/trichotomy#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
