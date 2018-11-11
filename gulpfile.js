@@ -1,8 +1,9 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
-var config = {
+const config = {
     src: 'src',
     dest: 'dist',
     demo: 'demo',
@@ -12,11 +13,13 @@ var config = {
 
 gulp.task('copy', function () {
     return gulp.src(`${config.src}/${config.filename}`)
+        .pipe(autoprefixer({}))
         .pipe(gulp.dest(config.dest));
 });
 
-gulp.task('minify-copy', function () {
+gulp.task('prefix-minify-copy', function () {
     return gulp.src(`${config.src}/${config.filename}`)
+        .pipe(autoprefixer({}))
         .pipe(cleanCSS({ debug: true }, (details) => {
             console.log(`${details.name}: ${details.stats.originalSize}`);
             console.log(`${details.name}: ${details.stats.minifiedSize}`);
@@ -30,7 +33,7 @@ gulp.task('copy-to-demo', function () {
         .pipe(gulp.dest(config.demo));
 });
 
-gulp.task('default', gulp.parallel('copy', 'minify-copy', 'copy-to-demo'));
+gulp.task('default', gulp.series('copy', 'prefix-minify-copy', 'copy-to-demo'));
 
 gulp.task('watch', function () {
     return gulp.watch(`${config.src}/${config.filename}`, gulp.series('default'));

@@ -20,6 +20,12 @@ html, body {
     color: ivory;
 }
 
+.trichotomy .demo-top.main-top{
+    z-index: 2;
+    background: purple;
+    height: 0;
+}
+
 .trichotomy .demo-bottom {
 	background: cyan;
 }
@@ -41,11 +47,18 @@ html, body {
 
 .trichotomy .overlay-horizontal {
     opacity: .8;
+    z-index: 1;
+    transition: height 100ms;
+    -webkit-transition: height 100ms;
 }
 
 button {
     float: right;
     font-size: 150%;
+}
+
+#toggleRightHeader {
+    margin-top: 30px;
 }
 
 * {
