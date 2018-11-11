@@ -36,6 +36,10 @@ html, body {
     right: 0;
 }
 
+.trichotomy .bottom {
+    bottom: 0;
+}
+
 .trichotomy .overlay-vertical {
     position: absolute;
     overflow: hidden;
